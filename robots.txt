@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://comptivo.github.io/sitemap.xml

@@ -43,3 +43,13 @@ Cette version contient des textes plus promotionnels, plus professionnels et ori
 
 ## Version visuelle premium
 Cette itération améliore fortement la présentation visuelle avec un rendu plus luxueux, élégant et professionnel, sans formulaire de contact direct dans la page.
+
+
+## Google Search Console
+- Balise de vérification Google ajoutée dans `index.html`.
+- `sitemap.xml` ajouté.
+- `robots.txt` ajouté.
+- URL canonique, métadonnées sociales et données structurées SoftwareApplication ajoutées.
+- Après publication, valider `https://comptivo.github.io/` dans Google Search Console.
+- Envoyer le sitemap `https://comptivo.github.io/sitemap.xml`.
+- Utiliser URL Inspection puis Request indexing pour la page d'accueil.
