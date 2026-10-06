@@ -40,3 +40,6 @@ Le site ne contient aucun lien de téléchargement public. Le logiciel est fourn
 
 ## Version marketing
 Cette version contient des textes plus promotionnels, plus professionnels et orientés présentation commerciale.
+
+## Version visuelle premium
+Cette itération améliore fortement la présentation visuelle avec un rendu plus luxueux, élégant et professionnel, sans formulaire de contact direct dans la page.

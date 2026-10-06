@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="bg-blur blur-1"></div>
+  <div class="bg-blur blur-2"></div>
+
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="#top" aria-label="Comptivo">
@@ -38,7 +41,7 @@
   </header>
 
   <main id="top">
-    <section class="hero">
+    <section class="hero premium-hero">
       <div class="container hero-grid">
         <div class="hero-copy">
           <div class="hero-badge" data-i18n="heroBadge">Comptivo V1.03 • Solution professionnelle • Windows 10/11</div>
@@ -53,35 +56,52 @@
           </div>
 
           <div class="hero-points">
-            <div class="point-card">
-              <strong data-i18n="point1Title">Analyse comptable</strong>
-              <span data-i18n="point1Text">Recherche, contrôle et lecture des données</span>
+            <div class="point-card glass">
+              <strong data-i18n="point1Title">Analyse comptable avancée</strong>
+              <span data-i18n="point1Text">Recherche, contrôle et lecture intelligente des données</span>
             </div>
-            <div class="point-card">
-              <strong data-i18n="point2Title">États & indicateurs</strong>
-              <span data-i18n="point2Text">Vision centralisée de l'activité</span>
+            <div class="point-card glass">
+              <strong data-i18n="point2Title">Tableaux de bord & indicateurs</strong>
+              <span data-i18n="point2Text">Une vision claire pour piloter l'activité</span>
             </div>
-            <div class="point-card">
-              <strong data-i18n="point3Title">Données locales</strong>
-              <span data-i18n="point3Text">Conservation sur votre poste de travail</span>
+            <div class="point-card glass">
+              <strong data-i18n="point3Title">Usage professionnel sécurisé</strong>
+              <span data-i18n="point3Text">Données conservées sur votre poste de travail</span>
             </div>
           </div>
         </div>
 
         <div class="hero-visual">
-          <img src="assets/comptivo-logo.jpg" alt="Comptivo logo" class="hero-logo" />
-          <div class="screenshot-card">
-            <div class="shot-label" data-i18n="demoLabel">Aperçu de l'interface — illustration promotionnelle avec données fictives</div>
-            <img src="assets/dashboard-demo.png" alt="Comptivo dashboard demo" class="dashboard-shot" />
+          <div class="hero-logo-card">
+            <img src="assets/comptivo-logo.jpg" alt="Comptivo logo" class="hero-logo" />
+          </div>
+
+          <div class="screenshot-shell">
+            <div class="shot-top">
+              <span class="shot-chip" data-i18n="demoLabel">Aperçu de l'interface — illustration promotionnelle avec données fictives</span>
+            </div>
+            <div class="screenshot-card premium-shot">
+              <img src="assets/dashboard-demo.png" alt="Comptivo dashboard demo" class="dashboard-shot" />
+            </div>
+          </div>
+
+          <div class="floating-metric float-a">
+            <small>Comptivo</small>
+            <strong data-i18n="strip2">Tableaux de bord</strong>
+          </div>
+
+          <div class="floating-metric float-b">
+            <small>Pro</small>
+            <strong data-i18n="strip5">Détection des anomalies</strong>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="strip">
+    <section class="lux-strip">
       <div class="container strip-items">
         <span data-i18n="strip1">Recherche globale</span>
-        <span data-i18n="strip2">États comptables</span>
+        <span data-i18n="strip2">Tableaux de bord</span>
         <span data-i18n="strip3">Fichiers fiscaux</span>
         <span data-i18n="strip4">Soldes antérieurs</span>
         <span data-i18n="strip5">Détection des anomalies</span>
@@ -93,10 +113,11 @@
         <div>
           <div class="section-kicker" data-i18n="aboutKicker">À propos</div>
           <h2 data-i18n="aboutTitle">Comptivo, une solution pensée pour moderniser l'analyse comptable.</h2>
+          <div class="signature-line"></div>
         </div>
-        <div class="section-copy">
-          <p data-i18n="aboutP1">Comptivo est un logiciel dédié à l'analyse et au contrôle comptable. Il aide les professionnels à retrouver plus vite l'information, à visualiser des indicateurs utiles et à organiser leurs vérifications dans un seul environnement.</p>
-          <p data-i18n="aboutP2">Le logiciel accompagne l'utilisateur dans ses contrôles sans remplacer son jugement professionnel. Les alertes doivent être comprises comme des points à vérifier, et non comme des erreurs déclarées automatiquement.</p>
+        <div class="section-copy premium-copy">
+          <p data-i18n="aboutP1">Comptivo est un logiciel professionnel dédié à l'analyse et au contrôle comptable. Il permet d'accéder plus rapidement à l'information, de visualiser des indicateurs pertinents et de centraliser les opérations de vérification dans un seul environnement de travail.</p>
+          <p data-i18n="aboutP2">Pensé pour les professionnels, Comptivo accompagne l'utilisateur dans ses contrôles sans jamais remplacer son jugement métier. Les alertes sont présentées comme des points à vérifier afin d'encourager une lecture rigoureuse et responsable.</p>
         </div>
       </div>
     </section>
@@ -110,62 +131,62 @@
         </div>
 
         <div class="features-grid">
-          <article class="feature-card">
+          <article class="feature-card feature-premium">
             <div class="icon-box">⌕</div>
             <h3 data-i18n="f1Title">Recherche globale</h3>
-            <p data-i18n="f1Text">Retrouvez rapidement un compte, un tier, une pièce, une référence, un journal, un libellé ou un montant.</p>
+            <p data-i18n="f1Text">Retrouvez immédiatement un compte, un tier, une pièce, une référence, un journal, un libellé ou un montant.</p>
           </article>
 
-          <article class="feature-card">
+          <article class="feature-card feature-premium">
             <div class="icon-box">▤</div>
-            <h3 data-i18n="f2Title">Tableau de bord</h3>
-            <p data-i18n="f2Text">Suivez les indicateurs clés, les chiffres synthétiques et les informations utiles dans une vue d'ensemble moderne.</p>
+            <h3 data-i18n="f2Title">Tableau de bord décisionnel</h3>
+            <p data-i18n="f2Text">Accédez en un coup d'œil aux indicateurs clés, aux chiffres synthétiques et aux informations importantes.</p>
           </article>
 
-          <article class="feature-card">
+          <article class="feature-card feature-premium">
             <div class="icon-box">%</div>
             <h3 data-i18n="f3Title">Fichiers fiscaux</h3>
-            <p data-i18n="f3Text">Travaillez avec les modèles TVA, TAP, TVA à déduire et IRG depuis le programme.</p>
+            <p data-i18n="f3Text">Travaillez efficacement avec les modèles TVA, TAP, TVA à déduire et IRG directement depuis le logiciel.</p>
           </article>
 
-          <article class="feature-card">
+          <article class="feature-card feature-premium">
             <div class="icon-box">↺</div>
             <h3 data-i18n="f4Title">Soldes antérieurs</h3>
-            <p data-i18n="f4Text">Importez et exploitez les soldes antérieurs avec une gestion adaptée aux comptes et aux tiers.</p>
+            <p data-i18n="f4Text">Importez et exploitez les soldes antérieurs avec une logique adaptée aux comptes et aux tiers.</p>
           </article>
 
-          <article class="feature-card">
+          <article class="feature-card feature-premium">
             <div class="icon-box">!</div>
             <h3 data-i18n="f5Title">Anomalies potentielles</h3>
-            <p data-i18n="f5Text">Repérez les opérations qui nécessitent une vérification sans conclure automatiquement à une erreur.</p>
+            <p data-i18n="f5Text">Identifiez rapidement les opérations qui nécessitent une vérification, sans conclure automatiquement à une erreur.</p>
           </article>
 
-          <article class="feature-card">
+          <article class="feature-card feature-premium">
             <div class="icon-box">⇪</div>
             <h3 data-i18n="f6Title">Mise à jour intégrée</h3>
-            <p data-i18n="f6Text">Faites évoluer l'application grâce à un système de mise à jour manuelle intégré.</p>
+            <p data-i18n="f6Text">Faites évoluer l'application simplement grâce à un système de mise à jour manuelle intégré.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="interface">
+    <section class="section interface-section" id="interface">
       <div class="container interface-grid">
         <div class="interface-copy">
           <div class="section-kicker" data-i18n="interfaceKicker">Interface</div>
           <h2 data-i18n="interfaceTitle">Une interface moderne qui met l'information utile au premier plan.</h2>
-          <p data-i18n="interfaceText1">L'interface de Comptivo met en avant l'essentiel : les indicateurs, les états, les recherches et les éléments qui méritent votre attention.</p>
-          <p data-i18n="interfaceText2">L'aperçu affiché ici est une illustration promotionnelle basée sur une capture du logiciel avec des données fictives.</p>
+          <p data-i18n="interfaceText1">Comptivo a été conçu pour offrir une lecture fluide, structurée et professionnelle des données comptables. Les indicateurs, états et informations importantes sont visibles rapidement.</p>
+          <p data-i18n="interfaceText2">L'aperçu présenté ici constitue une illustration promotionnelle basée sur une capture du logiciel, avec des données entièrement fictives.</p>
 
           <div class="benefit-list">
-            <div><span>✓</span><p data-i18n="b1">Navigation simple et organisée.</p></div>
-            <div><span>✓</span><p data-i18n="b2">Lecture rapide des indicateurs importants.</p></div>
-            <div><span>✓</span><p data-i18n="b3">Vision synthétique des informations clés.</p></div>
-            <div><span>✓</span><p data-i18n="b4">Présentation adaptée à un usage professionnel.</p></div>
+            <div><span>✓</span><p data-i18n="b1">Navigation claire, simple et professionnelle.</p></div>
+            <div><span>✓</span><p data-i18n="b2">Lecture rapide des indicateurs les plus importants.</p></div>
+            <div><span>✓</span><p data-i18n="b3">Vision synthétique pour mieux orienter vos vérifications.</p></div>
+            <div><span>✓</span><p data-i18n="b4">Présentation soignée adaptée à un usage métier.</p></div>
           </div>
         </div>
 
-        <div class="interface-shot">
+        <div class="interface-shot fancy-frame">
           <img src="assets/dashboard-demo.png" alt="Comptivo interface demo" />
         </div>
       </div>
@@ -179,22 +200,22 @@
         </div>
 
         <div class="audience-grid">
-          <div class="audience-card">
+          <div class="audience-card premium-audience">
             <span>01</span>
             <h3 data-i18n="a1Title">Comptables</h3>
-            <p data-i18n="a1Text">Pour accélérer les contrôles et retrouver rapidement l'information utile.</p>
+            <p data-i18n="a1Text">Pour accélérer les contrôles, gagner du temps et exploiter plus efficacement l'information comptable.</p>
           </div>
 
-          <div class="audience-card">
+          <div class="audience-card premium-audience">
             <span>02</span>
             <h3 data-i18n="a2Title">Cabinets comptables</h3>
-            <p data-i18n="a2Text">Pour centraliser l'analyse et améliorer le suivi des dossiers.</p>
+            <p data-i18n="a2Text">Pour centraliser l'analyse, améliorer le suivi des dossiers et renforcer la qualité du contrôle.</p>
           </div>
 
-          <div class="audience-card">
+          <div class="audience-card premium-audience">
             <span>03</span>
             <h3 data-i18n="a3Title">Entreprises</h3>
-            <p data-i18n="a3Text">Pour disposer d'une lecture plus claire de la comptabilité et des points à vérifier.</p>
+            <p data-i18n="a3Text">Pour obtenir une lecture plus claire de la comptabilité et identifier plus vite les points à vérifier.</p>
           </div>
         </div>
       </div>
@@ -203,21 +224,21 @@
     <section class="cta">
       <div class="container cta-box">
         <div>
-          <div class="section-kicker light" data-i18n="ctaKicker">Pourquoi Comptivo ?</div>
+          <div class="section-kicker light" data-i18n="ctaKicker">Pourquoi choisir Comptivo ?</div>
           <h2 data-i18n="ctaTitle">Un outil pensé pour allier clarté, efficacité et rigueur professionnelle.</h2>
-          <p data-i18n="ctaText">Comptivo vous aide à gagner du temps dans vos lectures, recherches et vérifications comptables tout en gardant l'utilisateur au centre de la décision.</p>
+          <p data-i18n="ctaText">Comptivo vous aide à structurer vos analyses, à gagner du temps dans vos recherches et à professionnaliser vos vérifications comptables dans un environnement moderne et pratique.</p>
         </div>
         <a href="#contact" class="btn btn-white" data-i18n="ctaButton">Demander des informations</a>
       </div>
     </section>
 
-    <section class="section" id="contact">
+    <section class="section contact-section" id="contact">
       <div class="container contact-grid">
         <div>
           <div class="section-kicker" data-i18n="contactKicker">Contact</div>
-          <h2 data-i18n="contactTitle">Parlons de votre besoin avec Comptivo.</h2>
-          <p class="contact-intro" data-i18n="contactIntro">Pour une présentation du logiciel, une demande d'information ou un échange professionnel, vous pouvez nous contacter via les moyens ci-dessous.</p>
-          <div class="contact-notice" data-i18n="contactNotice">Le logiciel n’est pas disponible en téléchargement direct sur le site. L’accès se fait après prise de contact.</div>
+          <h2 data-i18n="contactTitle">Faites découvrir Comptivo à votre structure.</h2>
+          <p class="contact-intro" data-i18n="contactIntro">Pour demander une présentation, obtenir plus d'informations, discuter d'un besoin ou connaître les modalités d'accès au logiciel, contactez-nous directement.</p>
+          <div class="contact-notice" data-i18n="contactNotice">Le logiciel n’est pas disponible en téléchargement direct sur le site. L’accès est proposé après prise de contact.</div>
 
           <div class="contact-cards">
             <a href="mailto:comptivo.soft@gmail.com" class="contact-card">
@@ -238,14 +259,14 @@
           </div>
         </div>
 
-        <div class="contact-panel">
+        <div class="contact-panel lux-panel">
           <img src="assets/comptivo-logo.jpg" alt="Comptivo logo" />
           <h3 data-i18n="panelTitle">Comptivo</h3>
-          <p data-i18n="panelText">Logiciel d'analyse et de contrôle comptable conçu pour offrir une lecture plus claire et plus efficace de vos données.</p>
-          <div class="panel-note" data-i18n="panelNote">Téléchargement non public — mise à disposition après contact.</div>
+          <p data-i18n="panelText">Une solution professionnelle d'analyse et de contrôle comptable conçue pour offrir une lecture plus claire, plus rapide et plus efficace de vos données.</p>
+          <div class="panel-note" data-i18n="panelNote">Téléchargement non public — accès et mise à disposition après contact.</div>
           <div class="contact-actions">
-            <a class="btn btn-white" href="mailto:comptivo.soft@gmail.com" data-i18n="panelEmailButton">Envoyer un e-mail</a>
-            <a class="btn btn-outline-light" href="https://www.facebook.com/people/Comptivo/61595256145750/?rdid=iqp5FHaurfPmMoBi&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1KMgdquzai%2F" target="_blank" rel="noopener" data-i18n="panelFacebookButton">Visiter Facebook</a>
+            <a class="btn btn-white" href="mailto:comptivo.soft@gmail.com" data-i18n="panelEmailButton">Nous écrire</a>
+            <a class="btn btn-outline-light" href="https://www.facebook.com/people/Comptivo/61595256145750/?rdid=iqp5FHaurfPmMoBi&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1KMgdquzai%2F" target="_blank" rel="noopener" data-i18n="panelFacebookButton">Visiter la page Facebook</a>
           </div>
         </div>
       </div>
@@ -258,7 +279,7 @@
         <img src="assets/comptivo-mark.png" alt="Comptivo" />
         <span>Comptivo</span>
       </div>
-      <p data-i18n="footerText">Comptivo — présentation promotionnelle multilingue.</p>
+      <p data-i18n="footerText">Comptivo — site promotionnel multilingue.</p>
     </div>
   </footer>
 
