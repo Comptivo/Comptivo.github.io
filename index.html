@@ -1,257 +1,266 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Comptivo | Analyse comptable et financière</title>
-
-  <meta name="description" content="Comptivo - Solution professionnelle d'analyse comptable et financière.">
-
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background: #f8fafc;
-      color: #0F172A;
-    }
-
-    header {
-      background: white;
-      padding: 20px 8%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #e2e8f0;
-    }
-
-    .logo {
-      font-size: 30px;
-      font-weight: bold;
-    }
-
-    .logo span {
-      color: #0EA5E9;
-    }
-
-    nav a {
-      margin-left: 25px;
-      text-decoration: none;
-      color: #334155;
-      font-weight: bold;
-    }
-
-    .hero {
-      background: #0F172A;
-      color: white;
-      text-align: center;
-      padding: 100px 20px;
-    }
-
-    .hero h1 {
-      font-size: 50px;
-      margin-bottom: 20px;
-    }
-
-    .hero h1 span {
-      color: #0EA5E9;
-    }
-
-    .hero p {
-      max-width: 750px;
-      margin: auto;
-      font-size: 20px;
-      color: #cbd5e1;
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 35px;
-      padding: 14px 28px;
-      background: #0EA5E9;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 70px 8%;
-    }
-
-    .title {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-
-    .title h2 {
-      font-size: 34px;
-      margin-bottom: 10px;
-    }
-
-    .title p {
-      color: #64748b;
-    }
-
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 25px;
-    }
-
-    .card {
-      background: white;
-      padding: 30px;
-      border: 1px solid #e2e8f0;
-      border-radius: 12px;
-    }
-
-    .card h3 {
-      margin-bottom: 12px;
-    }
-
-    .card p {
-      color: #64748b;
-    }
-
-    .about {
-      background: white;
-      text-align: center;
-    }
-
-    .about p {
-      max-width: 800px;
-      margin: auto;
-      color: #475569;
-      font-size: 18px;
-    }
-
-    footer {
-      background: #0F172A;
-      color: #cbd5e1;
-      text-align: center;
-      padding: 30px;
-    }
-
-    @media (max-width: 700px) {
-      nav {
-        display: none;
-      }
-
-      .hero h1 {
-        font-size: 38px;
-      }
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comptivo — Logiciel d'analyse comptable</title>
+  <meta name="description" content="Comptivo est une solution moderne d'analyse et de contrôle comptable. Découvrez ses fonctionnalités et contactez-nous." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/comptivo-mark.png" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Comptivo">
+        <img src="assets/comptivo-mark.png" alt="Comptivo" class="brand-mark" />
+        <span>Comptivo</span>
+      </a>
 
-<header>
+      <nav class="main-nav" id="mainNav">
+        <a href="#about" data-i18n="navAbout">À propos</a>
+        <a href="#features" data-i18n="navFeatures">Fonctionnalités</a>
+        <a href="#interface" data-i18n="navInterface">Interface</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </nav>
 
-  <div class="logo">
-    Comp<span>tivo</span>
-  </div>
-
-  <nav>
-    <a href="#fonctionnalites">Fonctionnalités</a>
-    <a href="#apropos">À propos</a>
-  </nav>
-
-</header>
-
-<section class="hero">
-
-  <h1>
-    Analyse comptable avec <span>Comptivo</span>
-  </h1>
-
-  <p>
-    Une solution professionnelle pour analyser vos données comptables
-    et obtenir une vision claire de votre situation financière.
-  </p>
-
-  <a href="#fonctionnalites" class="button">
-    Découvrir Comptivo
-  </a>
-
-</section>
-
-<section id="fonctionnalites">
-
-  <div class="title">
-
-    <h2>Fonctionnalités</h2>
-
-    <p>
-      Des outils conçus pour simplifier l'analyse comptable.
-    </p>
-
-  </div>
-
-  <div class="features">
-
-    <div class="card">
-      <h3>Analyse de compte</h3>
-      <p>
-        Analyse détaillée des comptes et des mouvements comptables
-        à partir des données importées.
-      </p>
+      <div class="header-actions">
+        <div class="lang-switch" aria-label="Language selector">
+          <button class="lang-btn active" data-lang="fr">FR</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="ar">AR</button>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+      </div>
     </div>
+  </header>
 
-    <div class="card">
-      <h3>Analyse financière</h3>
-      <p>
-        Analyse de la situation financière grâce aux principaux
-        indicateurs et ratios.
-      </p>
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="hero-badge" data-i18n="heroBadge">Comptivo V1.03 • Windows 10/11</div>
+          <h1 data-i18n="heroTitle">L'analyse comptable plus claire, plus rapide, plus structurée.</h1>
+          <p class="hero-text" data-i18n="heroText">
+            Comptivo centralise vos contrôles, vos recherches et vos états comptables
+            dans une interface moderne conçue pour gagner du temps et mieux exploiter vos données.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#about" data-i18n="heroPrimary">Découvrir le logiciel</a>
+            <a class="btn btn-secondary" href="#contact" data-i18n="heroSecondary">Nous contacter</a>
+          </div>
+
+          <div class="hero-points">
+            <div class="point-card">
+              <strong data-i18n="point1Title">Analyse comptable</strong>
+              <span data-i18n="point1Text">Recherche, contrôle et lecture des données</span>
+            </div>
+            <div class="point-card">
+              <strong data-i18n="point2Title">États & indicateurs</strong>
+              <span data-i18n="point2Text">Vision centralisée de l'activité</span>
+            </div>
+            <div class="point-card">
+              <strong data-i18n="point3Title">Données locales</strong>
+              <span data-i18n="point3Text">Conservation sur votre poste de travail</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <img src="assets/comptivo-logo.jpg" alt="Comptivo logo" class="hero-logo" />
+          <div class="screenshot-card">
+            <div class="shot-label" data-i18n="demoLabel">Aperçu de l'interface — données fictives</div>
+            <img src="assets/dashboard-demo.png" alt="Comptivo dashboard demo" class="dashboard-shot" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="strip">
+      <div class="container strip-items">
+        <span data-i18n="strip1">Recherche globale</span>
+        <span data-i18n="strip2">États comptables</span>
+        <span data-i18n="strip3">Fichiers fiscaux</span>
+        <span data-i18n="strip4">Soldes antérieurs</span>
+        <span data-i18n="strip5">Détection des anomalies</span>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container two-col">
+        <div>
+          <div class="section-kicker" data-i18n="aboutKicker">À propos</div>
+          <h2 data-i18n="aboutTitle">Une solution pensée pour simplifier l'analyse comptable.</h2>
+        </div>
+        <div class="section-copy">
+          <p data-i18n="aboutP1">Comptivo est un logiciel dédié à l'analyse et au contrôle comptable. Il aide les professionnels à retrouver plus vite l'information, à visualiser des indicateurs utiles et à organiser leurs vérifications dans un seul environnement.</p>
+          <p data-i18n="aboutP2">Le logiciel accompagne l'utilisateur dans ses contrôles sans remplacer son jugement professionnel. Les alertes doivent être comprises comme des points à vérifier, et non comme des erreurs déclarées automatiquement.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="features">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker" data-i18n="featuresKicker">Fonctionnalités</div>
+          <h2 data-i18n="featuresTitle">Les outils essentiels réunis dans une seule application.</h2>
+          <p data-i18n="featuresIntro">Comptivo offre une interface claire pour travailler plus efficacement sur vos données comptables.</p>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card">
+            <div class="icon-box">⌕</div>
+            <h3 data-i18n="f1Title">Recherche globale</h3>
+            <p data-i18n="f1Text">Retrouvez rapidement un compte, un tier, une pièce, une référence, un journal, un libellé ou un montant.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="icon-box">▤</div>
+            <h3 data-i18n="f2Title">Tableau de bord</h3>
+            <p data-i18n="f2Text">Suivez les indicateurs clés, les chiffres synthétiques et les informations utiles dans une vue d'ensemble moderne.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="icon-box">%</div>
+            <h3 data-i18n="f3Title">Fichiers fiscaux</h3>
+            <p data-i18n="f3Text">Travaillez avec les modèles TVA, TAP, TVA à déduire et IRG depuis le programme.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="icon-box">↺</div>
+            <h3 data-i18n="f4Title">Soldes antérieurs</h3>
+            <p data-i18n="f4Text">Importez et exploitez les soldes antérieurs avec une gestion adaptée aux comptes et aux tiers.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="icon-box">!</div>
+            <h3 data-i18n="f5Title">Anomalies potentielles</h3>
+            <p data-i18n="f5Text">Repérez les opérations qui nécessitent une vérification sans conclure automatiquement à une erreur.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="icon-box">⇪</div>
+            <h3 data-i18n="f6Title">Mise à jour intégrée</h3>
+            <p data-i18n="f6Text">Faites évoluer l'application grâce à un système de mise à jour manuelle intégré.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="interface">
+      <div class="container interface-grid">
+        <div class="interface-copy">
+          <div class="section-kicker" data-i18n="interfaceKicker">Interface</div>
+          <h2 data-i18n="interfaceTitle">Une interface claire pour mieux lire vos données.</h2>
+          <p data-i18n="interfaceText1">L'interface de Comptivo met en avant l'essentiel : les indicateurs, les états, les recherches et les éléments qui méritent votre attention.</p>
+          <p data-i18n="interfaceText2">L'aperçu affiché ici est une illustration promotionnelle basée sur une capture du logiciel avec des données fictives.</p>
+
+          <div class="benefit-list">
+            <div><span>✓</span><p data-i18n="b1">Navigation simple et organisée.</p></div>
+            <div><span>✓</span><p data-i18n="b2">Lecture rapide des indicateurs importants.</p></div>
+            <div><span>✓</span><p data-i18n="b3">Vision synthétique des informations clés.</p></div>
+            <div><span>✓</span><p data-i18n="b4">Présentation adaptée à un usage professionnel.</p></div>
+          </div>
+        </div>
+
+        <div class="interface-shot">
+          <img src="assets/dashboard-demo.png" alt="Comptivo interface demo" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section audience-section">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker" data-i18n="audienceKicker">Pour qui ?</div>
+          <h2 data-i18n="audienceTitle">Une solution destinée aux professionnels et structures comptables.</h2>
+        </div>
+
+        <div class="audience-grid">
+          <div class="audience-card">
+            <span>01</span>
+            <h3 data-i18n="a1Title">Comptables</h3>
+            <p data-i18n="a1Text">Pour accélérer les contrôles et retrouver rapidement l'information utile.</p>
+          </div>
+
+          <div class="audience-card">
+            <span>02</span>
+            <h3 data-i18n="a2Title">Cabinets comptables</h3>
+            <p data-i18n="a2Text">Pour centraliser l'analyse et améliorer le suivi des dossiers.</p>
+          </div>
+
+          <div class="audience-card">
+            <span>03</span>
+            <h3 data-i18n="a3Title">Entreprises</h3>
+            <p data-i18n="a3Text">Pour disposer d'une lecture plus claire de la comptabilité et des points à vérifier.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta-box">
+        <div>
+          <div class="section-kicker light" data-i18n="ctaKicker">Pourquoi Comptivo ?</div>
+          <h2 data-i18n="ctaTitle">Plus simple. Plus rapide. Plus structuré.</h2>
+          <p data-i18n="ctaText">Comptivo vous aide à gagner du temps dans vos lectures, recherches et vérifications comptables tout en gardant l'utilisateur au centre de la décision.</p>
+        </div>
+        <a href="#contact" class="btn btn-white" data-i18n="ctaButton">Demander des informations</a>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <div class="section-kicker" data-i18n="contactKicker">Contact</div>
+          <h2 data-i18n="contactTitle">Parlons de votre besoin avec Comptivo.</h2>
+          <p class="contact-intro" data-i18n="contactIntro">Pour une présentation du logiciel, une demande d'information ou un échange professionnel, vous pouvez nous contacter via les moyens ci-dessous.</p>
+
+          <div class="contact-cards">
+            <a href="mailto:comptivo.soft@gmail.com" class="contact-card">
+              <div class="contact-icon">@</div>
+              <div>
+                <strong data-i18n="contactEmailTitle">E-mail</strong>
+                <span>comptivo.soft@gmail.com</span>
+              </div>
+            </a>
+
+            <a href="https://www.facebook.com/people/Comptivo/61595256145750/?rdid=iqp5FHaurfPmMoBi&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1KMgdquzai%2F" target="_blank" rel="noopener" class="contact-card">
+              <div class="contact-icon">f</div>
+              <div>
+                <strong data-i18n="contactFacebookTitle">Facebook</strong>
+                <span data-i18n="contactFacebookText">Page officielle Comptivo</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-panel">
+          <img src="assets/comptivo-logo.jpg" alt="Comptivo logo" />
+          <h3 data-i18n="panelTitle">Comptivo</h3>
+          <p data-i18n="panelText">Logiciel d'analyse et de contrôle comptable conçu pour offrir une lecture plus claire et plus efficace de vos données.</p>
+          <div class="contact-actions">
+            <a class="btn btn-white" href="mailto:comptivo.soft@gmail.com" data-i18n="panelEmailButton">Envoyer un e-mail</a>
+            <a class="btn btn-outline-light" href="https://www.facebook.com/people/Comptivo/61595256145750/?rdid=iqp5FHaurfPmMoBi&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1KMgdquzai%2F" target="_blank" rel="noopener" data-i18n="panelFacebookButton">Visiter Facebook</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div class="footer-brand">
+        <img src="assets/comptivo-mark.png" alt="Comptivo" />
+        <span>Comptivo</span>
+      </div>
+      <p data-i18n="footerText">Comptivo — présentation promotionnelle multilingue.</p>
     </div>
+  </footer>
 
-    <div class="card">
-      <h3>État des dettes</h3>
-      <p>
-        Analyse et suivi des dettes fournisseurs à partir
-        des données comptables.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>État des créances</h3>
-      <p>
-        Suivi et analyse des créances clients et des soldes.
-      </p>
-    </div>
-
-  </div>
-
-</section>
-
-<section class="about" id="apropos">
-
-  <div class="title">
-
-    <h2>Pourquoi Comptivo ?</h2>
-
-  </div>
-
-  <p>
-    Comptivo transforme les données comptables en informations
-    claires, structurées et exploitables pour faciliter l'analyse
-    comptable et financière.
-  </p>
-
-</section>
-
-<footer>
-
-  © 2026 Comptivo — Analyse comptable et financière
-
-</footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
