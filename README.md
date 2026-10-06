@@ -32,3 +32,11 @@ Cette version du site a été préparée comme une page promotionnelle et de pr�
 6. Enregistrez.
 
 Le site sera ensuite publié automatiquement.
+
+
+## Politique d'accès
+Le site ne contient aucun lien de téléchargement public. Le logiciel est fourni uniquement après prise de contact.
+
+
+## Version marketing
+Cette version contient des textes plus promotionnels, plus professionnels et orientés présentation commerciale.

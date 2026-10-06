@@ -479,6 +479,27 @@ h2{
   margin-top:24px;
 }
 
+.contact-notice{
+  margin-top:18px;
+  padding:14px 16px;
+  border-radius:14px;
+  border:1px solid #dfe8f5;
+  background:#f5f9ff;
+  color:#35507a;
+  font-size:14px;
+  line-height:1.7;
+}
+.panel-note{
+  margin-top:16px;
+  padding:12px 14px;
+  border-radius:14px;
+  background:rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.18);
+  color:#f2f7ff;
+  font-size:14px;
+  line-height:1.6;
+}
+
 .site-footer{
   border-top:1px solid var(--line);
   background:#fff;
