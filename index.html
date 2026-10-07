@@ -12,38 +12,123 @@
 
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Comptivo" />
-  <meta property="og:title" content="Comptivo — Logiciel d'analyse comptable" />
-  <meta property="og:description" content="Comptivo est une solution professionnelle d'analyse et de contrôle comptable pour Windows 10/11." />
+  <meta property="og:title" content="Comptivo — Logiciel d’analyse comptable et financière" />
+  <meta property="og:description" content="Comptivo est un logiciel professionnel d’analyse comptable et financière pour Windows 10/11 : clients, fournisseurs, créances, bilan, TCR, indicateurs financiers, PDF et Excel." />
   <meta property="og:url" content="https://comptivo.github.io/" />
   <meta property="og:image" content="https://comptivo.github.io/assets/comptivo-logo.jpg" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Comptivo — Logiciel d'analyse comptable" />
-  <meta name="twitter:description" content="Analyse comptable, contrôle, tableaux de bord et outils professionnels avec Comptivo." />
+  <meta name="twitter:title" content="Comptivo — Logiciel d’analyse comptable et financière" />
+  <meta name="twitter:description" content="Logiciel d’analyse comptable et financière pour Windows 10/11 : clients, fournisseurs, bilan, TCR, indicateurs, PDF et Excel." />
   <meta name="twitter:image" content="https://comptivo.github.io/assets/comptivo-logo.jpg" />
 
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Comptivo",
-    "applicationCategory": "BusinessApplication",
-    "operatingSystem": "Windows 10, Windows 11",
-    "url": "https://comptivo.github.io/",
-    "image": "https://comptivo.github.io/assets/comptivo-logo.jpg",
-    "description": "Solution professionnelle d'analyse et de contrôle comptable pour Windows.",
-    "author": {
-      "@type": "Person",
-      "name": "Laifaoui Omar Fateh"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://comptivo.github.io/#organization",
+      "name": "Comptivo",
+      "url": "https://comptivo.github.io/",
+      "logo": "https://comptivo.github.io/assets/comptivo-logo.jpg",
+      "email": "comptivo.soft@gmail.com",
+      "sameAs": [
+        "https://www.facebook.com/people/Comptivo/61595256145750/"
+      ]
     },
-    "sameAs": [
-      "https://www.facebook.com/people/Comptivo/61595256145750/"
-    ]
-  }
+    {
+      "@type": "WebSite",
+      "@id": "https://comptivo.github.io/#website",
+      "url": "https://comptivo.github.io/",
+      "name": "Comptivo",
+      "publisher": {
+        "@id": "https://comptivo.github.io/#organization"
+      },
+      "inLanguage": [
+        "fr",
+        "en",
+        "ar"
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://comptivo.github.io/#software",
+      "name": "Comptivo",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "Accounting and Financial Analysis Software",
+      "operatingSystem": "Windows 10, Windows 11",
+      "url": "https://comptivo.github.io/",
+      "image": "https://comptivo.github.io/assets/comptivo-logo.jpg",
+      "description": "Comptivo est un logiciel professionnel d’analyse comptable et financière pour Windows 10/11. Il aide à analyser les comptes clients et fournisseurs, les créances, les avances, le bilan actif et passif, le TCR et plusieurs indicateurs financiers, avec génération de rapports PDF et exports Excel.",
+      "author": {
+        "@type": "Person",
+        "name": "Laifaoui Omar Fateh"
+      },
+      "publisher": {
+        "@id": "https://comptivo.github.io/#organization"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://comptivo.github.io/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qu’est-ce que Comptivo ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Comptivo est un logiciel professionnel d’analyse comptable et financière pour Windows 10 et Windows 11. Il centralise l’analyse, le contrôle, les tableaux de bord et plusieurs états comptables dans un environnement de travail unique."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "À qui s’adresse Comptivo ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Comptivo s’adresse aux comptables, cabinets comptables et entreprises qui souhaitent accélérer leurs contrôles, mieux exploiter leurs données et disposer d’une lecture plus claire de leur comptabilité."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quelles analyses Comptivo peut-il réaliser ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Comptivo peut notamment aider à analyser les comptes clients et fournisseurs, les créances, les avances, le bilan actif et passif, le TCR, les soldes antérieurs et plusieurs indicateurs financiers, ainsi qu’à repérer des opérations qui nécessitent une vérification."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comptivo fonctionne-t-il sur Windows 10 et Windows 11 ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. La version actuelle de Comptivo est destinée aux ordinateurs Windows 10 et Windows 11 en 64 bits."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comptivo exporte-t-il en PDF et Excel ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. Comptivo peut générer des rapports professionnels au format PDF et proposer des exports Excel pour faciliter l’exploitation et le partage des analyses."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Les données comptables sont-elles envoyées vers un serveur en ligne ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Le site de Comptivo présente le logiciel, tandis que l’application est conçue pour conserver les données de travail sur le poste de l’utilisateur selon son mode d’utilisation."
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 
-  <title>Comptivo — Logiciel d’analyse comptable professionnel | Algérie</title>
-  <meta name="description" content="Comptivo est un logiciel professionnel d’analyse et de contrôle comptable pour Windows 10/11 : tableaux de bord, analyse financière, état des clients, recherche globale et contrôles comptables." />
+  <title>Comptivo — Logiciel d’analyse comptable et financière</title>
+  <meta name="description" content="Comptivo est un logiciel professionnel d’analyse comptable et financière pour Windows 10/11 : clients, fournisseurs, créances, bilan, TCR, indicateurs financiers, PDF et Excel." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -65,6 +150,7 @@
         <a href="#about" data-i18n="navAbout">À propos</a>
         <a href="#features" data-i18n="navFeatures">Fonctionnalités</a>
         <a href="#interface" data-i18n="navInterface">Interface</a>
+        <a href="#faq">FAQ</a>
         <a href="#contact" data-i18n="navContact">Contact</a>
       </nav>
 
@@ -256,6 +342,49 @@
             <h3 data-i18n="a3Title">Entreprises</h3>
             <p data-i18n="a3Text">Pour obtenir une lecture plus claire de la comptabilité et identifier plus vite les points à vérifier.</p>
           </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section alt" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">FAQ</div>
+          <h2>Questions fréquentes sur Comptivo</h2>
+          <p>Les réponses essentielles pour comprendre ce qu’est Comptivo, à qui il s’adresse et ce qu’il permet de faire.</p>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card feature-premium">
+            <h3>Qu’est-ce que Comptivo ?</h3>
+            <p>Comptivo est un logiciel professionnel d’analyse comptable et financière pour Windows 10 et Windows 11. Il centralise l’analyse, le contrôle, les tableaux de bord et plusieurs états comptables dans un environnement de travail unique.</p>
+          </article>
+
+          <article class="feature-card feature-premium">
+            <h3>À qui s’adresse Comptivo ?</h3>
+            <p>Comptivo s’adresse aux comptables, cabinets comptables et entreprises qui souhaitent accélérer leurs contrôles, mieux exploiter leurs données et disposer d’une lecture plus claire de leur comptabilité.</p>
+          </article>
+
+          <article class="feature-card feature-premium">
+            <h3>Quelles analyses Comptivo peut-il réaliser ?</h3>
+            <p>Comptivo peut aider à analyser les comptes clients et fournisseurs, les créances, les avances, le bilan actif et passif, le TCR, les soldes antérieurs et plusieurs indicateurs financiers, ainsi qu’à repérer des opérations qui nécessitent une vérification.</p>
+          </article>
+
+          <article class="feature-card feature-premium">
+            <h3>Comptivo fonctionne-t-il sur Windows 10 et Windows 11 ?</h3>
+            <p>Oui. La version actuelle de Comptivo est destinée aux ordinateurs Windows 10 et Windows 11 en 64 bits.</p>
+          </article>
+
+          <article class="feature-card feature-premium">
+            <h3>Comptivo exporte-t-il en PDF et Excel ?</h3>
+            <p>Oui. Comptivo peut générer des rapports professionnels au format PDF et proposer des exports Excel pour faciliter l’exploitation et le partage des analyses.</p>
+          </article>
+
+          <article class="feature-card feature-premium">
+            <h3>Les données comptables sont-elles envoyées vers un serveur en ligne ?</h3>
+            <p>Le site de Comptivo présente le logiciel, tandis que l’application est conçue pour conserver les données de travail sur le poste de l’utilisateur selon son mode d’utilisation.</p>
+          </article>
         </div>
       </div>
     </section>
